@@ -54,7 +54,7 @@ def prefLogIn() {
     if (state.previousVersion == null){
     	state.previousVersion = 0;
     }
-    state.thisSmartAppVersion = "2.1.10"
+    state.thisSmartAppVersion = "2.1.11"
     state.installMsg = ""
     def showUninstall = username != null && password != null
 	return dynamicPage(name: "prefLogIn", title: "Connect to MyQ", nextPage:"prefListDevices", uninstall:false, install: false, submitOnChange: true) {
